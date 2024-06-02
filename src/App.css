@@ -90,27 +90,29 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     top: 0;
     left: 0;
-    height: 60px;
-    z-index: 10;
-    transition: background-color 0.3s ease;
-    overflow: hidden;  
-    display: flex;  
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
+
 .header.scrolling {
     background-color: rgba(0, 0, 0, 0.8);
     pointer-events: auto;
 }
+
+.header nav {
+    display: flex;
+}
+
 .header ul {
     display: flex;  
     list-style: none;
-    margin-left: -20px;
-    width: 100%;
-    
-
+    justify-content: center;
+    margin-left: -40px;
 }
 
 .header ul li {
-    padding: 10px 30px;
+    padding: 20px;
     color: #f56b81;
     transition: transform 0.3s ease-in-out;
 }
@@ -119,7 +121,6 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     color: #f56b81;
     transition: transform 0.3s ease-in-out;
-    
     display: inline-block;
 }
 .header ul li a:hover {
@@ -132,11 +133,11 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh + 60px);
     text-align: center;
     color: white;
     box-sizing: border-box;
     overflow: hidden;
+    min-height: 100vh;
   }
   
   .hero-content {
@@ -251,8 +252,12 @@ h1, h2, h3, h4, h5, h6 {
     .header ul {
         justify-content: flex-end;
     }
+    
     .header ul li {
         padding: 10px 40px;
+    }
+    .header ul li {
+        margin-right: 100px;
     }
     
     /* Hero on Desktop */
@@ -270,15 +275,14 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
         flex-direction: column;
         height: 100vh;
-        width: 500px;
+        width: 400px;
+        margin-left: 50px;
         justify-content: space-around;
       }
-    
       .hero h1 {
         text-align: left;
         font-size: 5em;
-        margin-top: -10px;
-        padding-right: 100px;
+        margin-left: 40px;
         color: white;
         font-weight: 400;
         text-transform: uppercase;
