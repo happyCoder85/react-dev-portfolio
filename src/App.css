@@ -270,6 +270,7 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
         flex-direction: column;
         height: 100vh;
+        width: 500px;
         justify-content: space-around;
       }
     
@@ -289,12 +290,15 @@ h1, h2, h3, h4, h5, h6 {
         justify-content: center;
         align-items: center;
         position: relative;
+        width: 300px;
      }
 
      .hero p {
-        margin-left: 300px;
         font-size: 2em;
-        margin-top: 440px;
+        margin-top: 600px;
+        
+        width: 500px;
+        
       } 
 
       .about {
