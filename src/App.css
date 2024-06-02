@@ -91,22 +91,26 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 0;
     height: 60px;
-    width: 100%;
     z-index: 10;
     transition: background-color 0.3s ease;
-    overflow: hidden;
-    
+    overflow: hidden;  
+    display: flex;  
 }
-
+.header.scrolling {
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: auto;
+}
 .header ul {
-    margin-left: -25px;
     display: flex;  
     list-style: none;
-    font-size: 1.3rem;
+    margin-left: -20px;
+    width: 100%;
+    
+
 }
 
 .header ul li {
-    margin: 0 15px;
+    padding: 10px 30px;
     color: #f56b81;
     transition: transform 0.3s ease-in-out;
 }
@@ -128,24 +132,24 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: calc(100vh + 60px);
     text-align: center;
     color: white;
-    padding: 0 20px;
     box-sizing: border-box;
+    overflow: hidden;
   }
-
+  
   .hero-content {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 100px);
     text-align: center;
     color: white;
     padding: 0 20px;
     box-sizing: border-box;
   }
-
+  
   .hero h1 {
+    margin-top: 100px;
     text-align: left;
     font-size: 3em;
     text-align: center;
@@ -154,64 +158,38 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     letter-spacing: 2px;
   }
-
+  
   .desktop {
     display: none;
-  }
-
- .hero-cta-button {
-    padding: 15px 30px;         /* Increased padding for larger button */
-    font-size: 1.4em;          /* Slightly larger font size for emphasis */
-    color: white;              /* Text color to contrast with background */
-    background: linear-gradient(45deg, #ff7e5f, #f06292); /* Gradient background */
-    border: none;
-    border-radius: 25px;        /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    cursor: pointer;
-    transition: all 0.3s ease;   /* Transition for hover effects */
-    position: relative;        /* For positioning the pseudo-element */
-    overflow: hidden;  
- }
-
- .hero-cta-button::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0); /* Start small, hidden */
-    width: 150%;
-    height: 150%;
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
-    border-radius: 50%;
-    transition: transform 0.5s ease; /* Slightly slower transition for ripple */
-    z-index: -1; /* Place behind the button text */
-  }
+  } 
   
   .hero-cta-button:hover {
-    transform: translateY(-2px); /* Slight lift on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
   }
   
-  .hero-cta-button:hover {
-    transform: translateY(-2px); /* Slight lift on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
-  }
-
+  
   .hero p {
     font-size: 2em;
     text-align: center;
-    margin-top: 50px;
-    
   }
+  
   .hero-image-container {
     display: flex;
     margin-left: -25px;
     justify-content: center;
     align-items: center;
- }
-
+  }
+  
+  .hero-image {
+    width: 200px; /* Adjust size as needed */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    
+  }
+ 
  .hero-cta-button {
-    margin-top: 25px;
     padding: 15px 30px;         /* Increased padding for larger button */
     font-size: 1.4em;          /* Slightly larger font size for emphasis */
     color: white;              /* Text color to contrast with background */
@@ -221,27 +199,41 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     cursor: pointer;
     transition: all 0.3s ease;   /* Transition for hover effects */
-    position: relative;        /* For positioning the pseudo-element */
-    overflow: hidden;  
  }
 
- .hero-cta-button::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0); /* Start small, hidden */
-    width: 150%;
-    height: 150%;
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
-    border-radius: 50%;
-    transition: transform 0.5s ease; /* Slightly slower transition for ripple */
-    z-index: -1; /* Place behind the button text */
+.hero-content {
+    margin-top: -50px;
 }
-    
-.hero-cta-button:hover::before {
-    transform: translate(-50%, -50%) scale(1.5); /* Expand on hover */
+.hero.hide .hero-content {
+    transform: translateX(-50%)
 }
+ /* About Section Styles */
+ .about {
+    width: 95%;
+    margin: 0 auto;
+ }
+
+ .about-container {
+    display: flex;
+    flex-direction: column; /* Stack header, content, image vertically on smaller screens */
+    align-items: center;
+    padding:  25px 20px; /* Adjust as needed */
+    text-align: center; /* Center text by default */
+    margin-top: -4px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    border: 2px solid #000;
+  }
+  .about-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about img.me {
+    width: 300px;
+    margin-top: 150px;
+  }
 
 @media (min-width: 768px) {
     .mobile {
@@ -251,24 +243,21 @@ h1, h2, h3, h4, h5, h6 {
         display: block;
     }
 
-    /* Header on Desktop */
     .header {
         width: 100%;
+        justify-content: flex-end;
     }
+    /* Header on Desktop */
     .header ul {
         justify-content: flex-end;
-        margin-right: 20px;
     }
-
-    .header.scrolling {
-        background-color: rgba(0, 0, 0, 0.8);
-        pointer-events: auto;
+    .header ul li {
+        padding: 10px 40px;
     }
     
     /* Hero on Desktop */
      .hero-content {
         display: flex;
-        margin-top: -100px;
         flex-direction: row;
         height: 100vh;
         text-align: center;
@@ -287,40 +276,36 @@ h1, h2, h3, h4, h5, h6 {
       .hero h1 {
         text-align: left;
         font-size: 5em;
-        margin-top: 10;
+        margin-top: -10px;
         padding-right: 100px;
         color: white;
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 2px;
       } 
-     
-    
+
       .hero-image-container {
         display: flex;
-        margin-top: -50px;
         justify-content: center;
         align-items: center;
+        position: relative;
      }
+
      .hero p {
+        margin-left: 300px;
         font-size: 2em;
-        margin-top: 550px;
-        padding-left: 75px;
+        margin-top: 440px;
+      } 
+
+      .about {
+        display: block;
+        width: 80%;
+        
       }
-    
-     
-      
-    /* About Section Styles */
-    .about {
-        display: flex;
-        
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-        
-   
+      .about-container {
+        width: 100%;
+        overflow: hidden;
+        padding: 25px;
+        margin-bottom: 100px;
+      }
 }
