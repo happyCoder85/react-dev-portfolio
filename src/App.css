@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Slab:wght@100..900&display=swap');
+body {
+    margin: auto;
+    font-family: "Roboto Slab", serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/* Main App Styles (Background) */
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 18em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+
+/* Header Section Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    
+}
+
+.header ul {
+    margin-left: -25px;
+    display: flex;  
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.header ul li {
+    margin: 0 15px;
+    color: #f56b81;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #f56b81;
+    transition: transform 0.3s ease-in-out;
+    
+    display: inline-block;
+}
+.header ul li a:hover {
+    transform: scale(1.2);
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .hero h1 {
+    text-align: left;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+ .hero-cta-button {
+    padding: 15px 30px;         /* Increased padding for larger button */
+    font-size: 1.4em;          /* Slightly larger font size for emphasis */
+    color: white;              /* Text color to contrast with background */
+    background: linear-gradient(45deg, #ff7e5f, #f06292); /* Gradient background */
+    border: none;
+    border-radius: 25px;        /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    cursor: pointer;
+    transition: all 0.3s ease;   /* Transition for hover effects */
+    position: relative;        /* For positioning the pseudo-element */
+    overflow: hidden;  
+ }
+
+ .hero-cta-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Start small, hidden */
+    width: 150%;
+    height: 150%;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    border-radius: 50%;
+    transition: transform 0.5s ease; /* Slightly slower transition for ripple */
+    z-index: -1; /* Place behind the button text */
+  }
+  
+  .hero-cta-button:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+  }
+  
+  .hero-cta-button:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+  }
+
+  .hero p {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px;
+    
+  }
+  .hero-image-container {
+    display: flex;
+    margin-left: -25px;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .hero-cta-button {
+    margin-top: 25px;
+    padding: 15px 30px;         /* Increased padding for larger button */
+    font-size: 1.4em;          /* Slightly larger font size for emphasis */
+    color: white;              /* Text color to contrast with background */
+    background: linear-gradient(45deg, #ff7e5f, #f06292); /* Gradient background */
+    border: none;
+    border-radius: 25px;        /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    cursor: pointer;
+    transition: all 0.3s ease;   /* Transition for hover effects */
+    position: relative;        /* For positioning the pseudo-element */
+    overflow: hidden;  
+ }
+
+ .hero-cta-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Start small, hidden */
+    width: 150%;
+    height: 150%;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    border-radius: 50%;
+    transition: transform 0.5s ease; /* Slightly slower transition for ripple */
+    z-index: -1; /* Place behind the button text */
+}
+    
+.hero-cta-button:hover::before {
+    transform: translate(-50%, -50%) scale(1.5); /* Expand on hover */
+}
+
+@media (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+
+    /* Header on Desktop */
+    .header {
+        width: 100%;
+    }
+    .header ul {
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+
+    .header.scrolling {
+        background-color: rgba(0, 0, 0, 0.8);
+        pointer-events: auto;
+    }
+    
+    /* Hero on Desktop */
+     .hero-content {
+        display: flex;
+        margin-top: -100px;
+        flex-direction: row;
+        height: 100vh;
+        text-align: center;
+        color: white;
+        padding: 0 20px;
+        box-sizing: border-box;
+      }
+    
+      .firstPanel {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-around;
+      }
+    
+      .hero h1 {
+        text-align: left;
+        font-size: 5em;
+        margin-top: 10;
+        padding-right: 100px;
+        color: white;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      } 
+     
+    
+      .hero-image-container {
+        display: flex;
+        margin-top: -50px;
+        justify-content: center;
+        align-items: center;
+     }
+     .hero p {
+        font-size: 2em;
+        margin-top: 550px;
+        padding-left: 75px;
+      }
+    
+     
+      
+    /* About Section Styles */
+    .about {
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+        
+   
+}
