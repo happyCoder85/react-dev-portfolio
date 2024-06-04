@@ -1,11 +1,9 @@
 import React from 'react';
 import MyPortrait from '../assets/my-portrait.png';
-import Header from './Header';
 
 const Hero = () => {
   return (
     <section className='hero'>
-      <Header />  
       <div className="hero-content" data-aos="zoom-in"> {/* Wrapper for content */}
         <div className="firstPanel">  {/* Wrapper for text */}
           <h1>

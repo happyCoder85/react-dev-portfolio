@@ -1,7 +1,8 @@
-// src/App.js
 import React, { useEffect } from 'react';
+import { HashRouter } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -24,11 +25,20 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
-      <Hero />
-      <About />
-
-    </div>
+    <HashRouter>
+      <div className="App">
+        <Header />
+        <div id="home">
+          <Hero />
+        </div>
+        <div id="about">
+          <About />
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
+      </div>
+    </HashRouter>
   );
 };
 

@@ -3,7 +3,7 @@ import me from '../assets/hi.png';
 
 const About = () => {
   return (
-    <div data-aos="fade-up-left" className="main-container">
+    <div data-aos="fade-up-left" className="main-container about">
       <img src={me} alt="Jon Spurling aka Happy Coder" className="me" />
       <div className="box-container">
         <h1>Full-Stack Developer: Where Code Meets Caffeine (and Dad Jokes)</h1>

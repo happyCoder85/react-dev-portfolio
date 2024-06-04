@@ -84,45 +84,46 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header Section Styles */
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
 }
 
 .header.scrolling {
-    background-color: rgba(0, 0, 0, 0.8);
-    pointer-events: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  pointer-events: auto;
 }
 
 .header nav {
-    display: flex;
+  display: flex;
 }
 
 .header ul {
-    display: flex;  
-    list-style: none;
-    justify-content: center;
-    margin-left: -40px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .header ul li {
-    padding: 20px;
-    color: #f56b81;
-    transition: transform 0.3s ease-in-out;
+  padding: 20px;
+  color: #f56b81;
 }
 
 .header ul li a {
-    text-decoration: none;
-    color: #f56b81;
-    transition: transform 0.3s ease-in-out;
-    display: inline-block;
+  text-decoration: none;
+  color: #f56b81;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
+
 .header ul li a:hover {
-    transform: scale(1.2);
+  transform: scale(1.4);
 }
 
 /* Hero Section Styles */
@@ -144,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     text-align: center;
     color: white;
-    padding: 0 20px;
+    padding: 0 200px;
     box-sizing: border-box;
   }
   
@@ -230,7 +231,37 @@ h1, h2, h3, h4, h5, h6 {
   .main-container img.me {
     width: 300px;
   }
+  div#projects {
+    min-height: 75vh;
+    min-width: 350px;
+    max-width: 500px;
 
+    margin: 0 auto;
+  }
+
+
+
+  div#coming-soon {
+    width: 200px;
+    height: 50px;
+    padding-top: 20px;
+    font-size: 1.4rem;
+    position: relative;
+    background-color: lightblue;
+    animation-name: comingsoon;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    }
+    @keyframes comingsoon {
+      0%   {background-color:lightblue; color: #000; left:0; top:0px;}
+      50%  {background-color:rgb(48, 142, 185); left:0px; top:400px;}
+      100%  {background-color:rgb(6, 71, 101); color: #fff; left:0px; top:0px;}
+    }
+
+    div#projects-container {
+      margin-top: 100px;
+      margin-bottom: 75px;
+    }
 @media (min-width: 768px) {
       .header {
         width: 100%;
@@ -258,10 +289,14 @@ h1, h2, h3, h4, h5, h6 {
       margin-right: auto;
     }
 
+    .main-container {
+      margin-top: 200px;
+      margin-bottom: -125px;
+    }
     .main-container img.me {
       margin-left: 400px;
     }
-      
+
 }
 
 @media (min-width: 1500px) {
@@ -270,6 +305,11 @@ h1, h2, h3, h4, h5, h6 {
 }
   .desktop {
     display: block;
+}
+
+.about {
+  margin: 0 auto;
+  padding-top: 100px;
 }
 
 /* Hero on Desktop */
