@@ -3,9 +3,9 @@ import me from '../assets/hi.png';
 
 const About = () => {
   return (
-    <div data-aos="fade-up-left" className="about">
+    <div data-aos="fade-up-left" className="main-container">
       <img src={me} alt="Jon Spurling aka Happy Coder" className="me" />
-      <div className="about-container">
+      <div className="box-container">
         <h1>Full-Stack Developer: Where Code Meets Caffeine (and Dad Jokes)</h1>
         <p>Hi, I'm Jonathan, a tech-loving dad who thrives on turning caffeine (strictly tea!) into code. My passion for IT has led me down a winding path of exploration, from building websites and tinkering with IoT devices to delving into the world of 3D printing. I'm constantly seeking out new challenges and knowledge, always eager to see what I can create next.</p>
 
