@@ -1,21 +1,20 @@
-import React from 'react'
-import me from '../assets/hi.png'
+import React from 'react';
+import me from '../assets/hi.png';
 
-function About() {
+const About = () => {
   return (
-    <div className="about">
+    <div data-aos="fade-up-left" className="about">
       <img src={me} alt="Jon Spurling aka Happy Coder" className="me" />
       <div className="about-container">
-          <h1>Where Code Meets Curiosity (and the Occasional 3D-Printed Gadget)</h1>
-          <p>
-            Howdy, fellow tech enthusiasts! I'm Jon Spurling, aka "Happy Coder" - a full-stack developer with an unquenchable thirst for problem-solving. Powered by a steady drip of caffeine and the unbridled joy of turning 1s and 0s into something that actually works (most of the time). Whether it's wrangling pixels with React and Material UI or orchestrating server-side symphonies with Node.js and Python, I'm all in!
-          </p>
-          <p>
-            My toolkit is overflowing with goodies like HTML, CSS, JavaScript, and more acronyms than you can shake a
-          </p>
-      </div>
-      </div>  
-  )
-}
+        <h1>Full-Stack Developer: Where Code Meets Caffeine (and Dad Jokes)</h1>
+        <p>Hi, I'm Jonathan, a tech-loving dad who thrives on turning caffeine (strictly tea!) into code. My passion for IT has led me down a winding path of exploration, from building websites and tinkering with IoT devices to delving into the world of 3D printing. I'm constantly seeking out new challenges and knowledge, always eager to see what I can create next.</p>
 
-export default About
+        <p>Currently, I'm channeling my creativity into "Fake Sites," a personal project where I design and develop websites for imaginary clients. It's my way of sharpening my full-stack development skills while flexing my problem-solving muscles in a variety of scenarios. I'm starting with simpler sites, but I have big plans to tackle more complex projects like forums and interactive dashboards in the near future.</p>
+
+        <p>When I'm not immersed in the digital world, you'll find me enjoying the great outdoors with my family, sharing a dad joke or two, or brewing the perfect cup of tea. Feel free to reach out if you'd like to collaborate on a project, chat about tech, or simply swap some puns!</p>
+      </div>
+    </div>
+  );
+};
+
+export default About;
