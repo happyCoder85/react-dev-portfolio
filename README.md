@@ -79,8 +79,8 @@ This section highlights some of my key projects. Each project includes a descrip
 ## Contact
 Feel free to reach out to me via the following channels:
 - **Email:** jon@jonspurling.ca
-- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/jonspurling/)
-- **Twitter:** [@yourtwitterhandle](https://twitter.com/happycoder85)
+- **LinkedIn:** [jonspurling](https://www.linkedin.com/in/jonspurling/)
+- **Twitter:** [@happycoder85](https://twitter.com/happycoder85)
 
 ## Contributing
 Contributions are welcome! If you have suggestions or improvements, please open an issue or submit a pull request.
