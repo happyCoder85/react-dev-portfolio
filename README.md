@@ -1,3 +1,99 @@
-# react-dev-portfolio
+# React Dev Portfolio
 
-This is my developer porfolio written in React.
+Welcome to my Developers Portfolio Website! This project is designed to showcase my skills and projects, as well as provide an introduction to who I am.
+
+## Table of Contents
+- [React Dev Portfolio](#react-dev-portfolio)
+  - [Table of Contents](#table-of-contents)
+  - [About](#about)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Projects](#projects)
+    - [Project 1: Project Name](#project-1-project-name)
+    - [Project 2: Project Name](#project-2-project-name)
+  - [Contact](#contact)
+  - [Contributing](#contributing)
+  - [License](#license)
+
+## About
+'React Dev Portfolio' is a responsive web application built with React and standard CSS. The site features dynamic content and motion animations to provide an engaging user experience. This portfolio aims to demonstrate my skills through various projects and give a brief overview of my professional background.
+
+## Features
+- **Responsive Design:** Optimized for viewing on any device, whether it's a desktop, tablet, or mobile.
+- **Dynamic Content:** Content updates dynamically without requiring page reloads.
+- **Motion Animations:** Smooth animations enhance the visual appeal and user experience.
+- **Projects Showcase:** Detailed view of my key projects, including descriptions, technologies used, and links to live demos or repositories.
+- **About Me Section:** A brief introduction to who I am, my skills, and my professional background.
+
+## Technologies Used
+- **React:** JavaScript library for building user interfaces.
+- **CSS:** Styling the application.
+- **Framer Motion:** Library for animations in React.
+- **React Router:** For navigating between different sections of the portfolio.
+
+## Installation
+To run this project locally, follow these steps:
+
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/yourusername/react-dev-portfolio.git
+    ```
+2. **Navigate to the project directory:**
+    ```sh
+    cd react-dev-portfolio
+    ```
+3. **Install the dependencies:**
+    ```sh
+    npm install
+    ```
+4. **Start the development server:**
+    ```sh
+    npm start
+    ```
+The application will be available at `http://localhost:3000`.
+
+## Usage
+Once the application is running, you can explore different sections:
+- **Home:** Introduction and overview.
+- **About Me:** Learn more about my background, skills, and experience.
+- **Projects:** Browse through my featured projects.
+- **Contact:** Get in touch with me.
+
+## Projects
+This section highlights some of my key projects. Each project includes a description, the technologies used, and links to live demos or GitHub repositories.
+
+### Project 1: Project Name
+- **Description:** Brief overview of the project.
+- **Technologies Used:** React, CSS, etc.
+- **Link:** [Live Demo](#) | [Repository](#)
+
+### Project 2: Project Name
+- **Description:** Brief overview of the project.
+- **Technologies Used:** React, CSS, etc.
+- **Link:** [Live Demo](#) | [Repository](#)
+
+*(Add more projects as needed)*
+
+## Contact
+Feel free to reach out to me via the following channels:
+- **Email:** jon@jonspurling.ca
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/jonspurling/)
+- **Twitter:** [@yourtwitterhandle](https://twitter.com/happycoder85)
+
+## Contributing
+Contributions are welcome! If you have suggestions or improvements, please open an issue or submit a pull request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Thank you for visiting my portfolio! I hope you find my projects interesting and my skills impressive.
