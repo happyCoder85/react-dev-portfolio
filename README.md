@@ -13,7 +13,7 @@ Welcome to my Developers Portfolio Website! This project is designed to showcase
   - [Projects](#projects)
     - [Project 1: Fake Sites](#project-1-fake-sites)
     - [Project 2: Daily Oracle](#project-2-Daily-Oracle)
-    - [Project 3: Weather Processing App](#project-3-WeatherApp)
+    - [Project 3: Weather App](#project-3-WeatherApp)
   - [Contact](#contact)
   - [Contributing](#contributing)
   - [License](#license)
