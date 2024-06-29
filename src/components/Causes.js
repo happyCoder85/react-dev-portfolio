@@ -3,19 +3,9 @@ import causes from '../data/CausesData';
 
 const Causes = () => {
 
-  const disableLink = (url) => {
-    if (url === 'https://support.cancercarefdn.mb.ca/site/TR?fr_id=1943&pg=entry') {
-        return true;
-    } else {
-        return false;
-    }
-  }
-
   const handleLinkNavigation = (url) => {
     window.open(url, '_blank');
   };
-
-
 
   return (
     <>
@@ -45,7 +35,7 @@ const Causes = () => {
                 ))}
                 <p className="cta">{cause.cta}</p>
                 </div>
-                { disableLink(cause.link) ? <button className="cta-button coming-soon" disabled>Coming Soon!</button> : <button className="cta-button" onClick={() => handleLinkNavigation(cause.link)}>Donate Now!</button> }
+                <button className="cta-button" onClick={() => handleLinkNavigation(cause.link)}>Donate Now!</button> 
                 </div>
             ))}
             </div>

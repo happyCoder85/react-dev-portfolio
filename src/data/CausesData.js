@@ -15,7 +15,7 @@ const causes = [
     description: ["Welcome to Our Lemonade Stand for Hope, where every glass poured supports children battling cancer through CancerCare Manitoba Foundation.", "Inspired by our son Zayden's journey, we're standing strong to raise funds for vital treatments and research that bring hope to families facing childhood cancer.", "Every donation and sip of lemonade counts in our mission to make a difference in our community."],
     cta: "Join us at our stand or support us online as we turn lemonade into life-changing care and hope for children in Manitoba.",
     image: LemonadeStandForHope,
-    link: 'https://support.cancercarefdn.mb.ca/site/TR?fr_id=1943&pg=entry',
+    link: 'https://support.cancercarefdn.mb.ca/site/TR/Events/LemonadeStandsforHope?px=1736058&pg=personal&fr_id=1943',
   },
 ];
 
