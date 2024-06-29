@@ -229,6 +229,72 @@ h1, h2, h3, h4, h5, h6 {
   .about p {
     text-align: left;
   }
+
+  /* Causes */
+  div.causes-description {
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  div.causes-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 auto;
+    max-width: 95%; /* Increased shadow on hover */
+  }
+
+  div.causes-cards-container div.cause-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 25px;
+    max-width: 400px;
+  }
+
+  div.causes-cards-container div img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  
+  div.causes-cards-container div.cause-card p {
+    width: 95%;
+    margin: 3px auto;
+  }
+
+  p.cta {
+    height: 50px;
+  }
+
+  .text {
+    height: 350px;
+  }
+
+  button.cta-button {
+    padding: 15px 30px;         /* Increased padding for larger button */
+    font-size: 1.4em;          /* Slightly larger font size for emphasis */
+    color: white;              /* Text color to contrast with background */
+    background: linear-gradient(45deg, #ff7e5f, #f06292); /* Gradient background */
+    border: none;
+    border-radius: 25px;        /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    cursor: pointer;
+    transition: all 0.3s ease;   /* Transition for hover effects */
+    margin-bottom: 10px;
+  }
+
+  button.cta-button:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+  }
+
+  button.cta-button.coming-soon {
+    cursor: not-allowed;
+  }
+
+  /* Projects */
   div#projects-container {
       margin-top: 100px;
       margin-bottom: 75px;
@@ -286,7 +352,11 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    margin: 20px;
+  }
+
+  div.box-container:last-of-type() {
+    margin-bottom: 0;
+    padding: 0;
   }
   
   .card-header {
@@ -360,6 +430,21 @@ h1, h2, h3, h4, h5, h6 {
   .goBack:hover {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Decreased shadow on hover */
   }
+  .project-headings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer {
+    display: flex;
+    height: 100px;
+    margin-top: -200px;
+  }
+
+  footer p {
+    margin: auto;
+  }
 
 @media (min-width: 500px) {
   .about {
@@ -388,6 +473,10 @@ h1, h2, h3, h4, h5, h6 {
     .header ul li {
         margin-right: 100px;
     }
+    div.causes-cards-container {
+      flex-direction: row;
+    }
+
     .projects-container {
       display: flex;
       flex-direction: row;
@@ -418,13 +507,9 @@ h1, h2, h3, h4, h5, h6 {
       width: 200px;
       justify-content: flex-end;
     }
-    .project-headings {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
+    
 
-    .large-screen {
+    h4.large-screen {
       display: block;
     }
 

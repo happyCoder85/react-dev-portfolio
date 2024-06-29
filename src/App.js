@@ -6,6 +6,8 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
+import Causes from './components/Causes';
+import Footer from './components/Footer';
 import './App.css';
 
 const App = () => {
@@ -34,8 +36,12 @@ const App = () => {
         <div id="about">
           <About />
         </div>
+        <div id="causes">
+          <Causes />
+        </div>
         <div id="projects">
           <Projects />
+          <Footer />
         </div>
       </div>
     </HashRouter>
