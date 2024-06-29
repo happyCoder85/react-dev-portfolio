@@ -256,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
       width: 80%;
     }
   
-    .tech-stack {
+    .project div.tech-stack {
       display: none;
     }
 
@@ -266,7 +266,10 @@ h1, h2, h3, h4, h5, h6 {
       max-width: 75px;
       padding: 5px;
     }
-    .large-screen {
+    h4.small-screen {
+      width: 75%;
+    }
+    h4.large-screen {
       display: none;
     }
 
@@ -368,6 +371,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (min-width: 768px) {
+  .project div.tech-stack {
+    display: flex;
+  }
       .header {
         width: 100%;
         justify-content: flex-end;
@@ -406,7 +412,7 @@ h1, h2, h3, h4, h5, h6 {
       text-align: center;
     }
 
-    .tech-stack {
+    div.tech-stack {
       display: flex;
       flex-direction: row;
       width: 200px;

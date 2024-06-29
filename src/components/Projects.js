@@ -34,7 +34,7 @@ const Projects = () => {
                     <h2>Current</h2>
                     <div className="project-headings">
                       <h4>Title</h4>
-                      <h4>Description</h4>
+                      <h4 className='small-screen'>Description</h4>
                       <h4 className="large-screen">Tech Stack</h4>
                     </div>
                     {projects.map((project) => (
@@ -44,7 +44,7 @@ const Projects = () => {
                         onClick={() => handleProjectClick(project)}
                       >
                         <h3>{project.title}</h3>
-                        <p className="description">{project.description[0].slice(0,)} ...</p>
+                        <p className="description">{project.description[0].slice(0,100)} ...</p>
                         <div className="tech-stack">
                           {project.techStack.map((tech, index) => (
                             <img key={index} src={tech} alt={`${tech} logo`} />
