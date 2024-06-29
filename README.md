@@ -12,7 +12,8 @@ Welcome to my Developers Portfolio Website! This project is designed to showcase
   - [Usage](#usage)
   - [Projects](#projects)
     - [Project 1: Fake Sites](#project-1-fake-sites)
-    - [Project 2: Project Name](#project-2-project-name)
+    - [Project 2: Daily Oracle](#project-2-Daily-Oracle)
+    - [Project 3: Weather App](#project-3-Weather-App)
   - [Contact](#contact)
   - [Contributing](#contributing)
   - [License](#license)
@@ -72,14 +73,17 @@ Explore the website of Alex Williams, an aspiring author, featuring a clean and 
 Fake Sites is not just a portfolio; it's a testament to my expertise in web development, content generation, and persona creation. Each site reflects my commitment to delivering personalized, functional, and aesthetically pleasing web solutions. Dive in and discover the versatility and creativity that define my work.
 
 - **Technologies Used:** HTML, CSS, JavaScript.
-- **Link:** [Live Demo](#) | [Repository](#)
+- **Link:** [Live Demo](https://fakesites.jonspurling.ca) | [Repository](https://github.com/happyCoder85/FakeSites)
 
-### Project 2: Project Name
-- **Description:** Brief overview of the project.
-- **Technologies Used:** React, CSS, etc.
-- **Link:** [Live Demo](#) | [Repository](#)
+### Project 2: Daily Oracle
+- **Description:** Daily Oracle is a modern journaling app tailored for the 21st century lifestyle, enabling users to meticulously track every aspect of their daily lives. Users can create custom segments such as Feelings, Thoughts, Hunger Levels, and consumption of cigarettes, drinks, or other substances. The app supports the creation of subcategories for people, places, and more, allowing for comprehensive life documentation.
+- **Technologies Used:** React
+- **Link:** [Repository](https://github.com/happyCoder85/DailyOracle)
 
-*(Add more projects as needed)*
+### Project 3: Weather App
+- **Description:** The Weather Processing App fetches historical weather data from Environment Canada for Winnipeg, Manitoba, dating back to 1996. It allows users to generate box and line plot charts based on the retrieved weather data. The app incorporates threading to optimize data processing and includes a graphical user interface (GUI) for user interaction.
+- **Technologies Used:** Python
+- **Link:** [Repository](https://github.com/happyCoder85/weather_processing_app)
 
 ## Contact
 Feel free to reach out to me via the following channels:
